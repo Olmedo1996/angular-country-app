@@ -14,5 +14,8 @@ import { Country } from '../../interfaces/country';
 })
 export class CountryTableComponent {
   @Input()
+  public isLoading: boolean = false;
+
+  @Input()
   public countries: Country[] = [];
 }
