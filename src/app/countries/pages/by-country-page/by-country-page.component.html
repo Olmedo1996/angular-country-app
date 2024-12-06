@@ -5,13 +5,14 @@
   <div class="col">
     <shared-search-box
       placeholder="Buscar por país"
-      (onValue)="searchByCountry($event)"
+      [initialValue]="initialValue"
+      (onDebounce)="searchByCountry($event)"
     ></shared-search-box>
   </div>
 </div>
 <div class="row">
   <div class="col">
     <hr>
-    <countries-table [countries]="countries"></countries-table>
+    <countries-table [countries]="countries" [isLoading]="isLoading"></countries-table>
   </div>
 </div>

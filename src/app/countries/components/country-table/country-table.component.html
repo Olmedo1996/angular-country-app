@@ -20,7 +20,7 @@
     <tbody>
       <tr *ngFor="let country of countries">
         <td>
-          <img class="small-flag" [src]="country.flags.svg" [alt]="country.flags.alt" >
+          <img class="small-flag" [src]="country.flags.svg" [alt]="country.flags.alt" width="25px">
            <!-- {{country.flags.svg}} -->
         </td>
         <td>{{ country.name.common }}</td>
